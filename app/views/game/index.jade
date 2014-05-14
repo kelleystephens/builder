@@ -1,0 +1,25 @@
+extends ../shared/template
+
+block content
+  h1 Builder
+
+  form
+    input(type='text', name='username', autofocus=true, placeholder='Username')
+    button#login Login
+  #username
+
+  button#seed Plant Seed
+  button#getforest Get Forest
+  #forest
+
+  #balance Balance:
+  #balanceTotal
+  #wood Wood:
+  #woodTotal
+
+  form
+    input(type='text', name='wood')
+    button#sell Sell Wood
+
+block scripts
+  script(src='/js/es6/compiled/game.js')
